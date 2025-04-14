@@ -1,0 +1,118 @@
+<html>
+<title>Aravind's Travel Recommendation</title>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="travel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Travel Recomendation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="conditionInput" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="btnSearch" class="btn btn-success" type="button">Search</button>
+                    <button id="btnReset" class="btn btn-primary" type="button">Reset</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="position-relative overflow-hidden   bg-body-tertiary jumbotron  row">
+        <div class="col-md-1">
+            <div class="d-flex flex-column align-items-center justify-content-center social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+
+        </div>
+        <div class="col-md-11 p-lg-5  my-5 ">
+            <div id="main">
+                <h1 class="display-3 fw-bold">ABOUT US</h1>
+                <h5 class="fw-normal mb-3 text-white mt-20">we believe that travel is more than just visiting new places
+                    —
+                    it's about creating unforgettable memories, discovering hidden gems, and connecting with cultures in
+                    the
+                    most authentic way.
+
+                    Founded with passion and built on trust, we are a team of travel enthusiasts, planners, and
+                    storytellers
+                    dedicated to making your travel dreams come true. Whether you're craving the serenity of a tropical
+                    beach, the thrill of a mountain trek, or the culture of a vibrant city, we curate personalized
+                    experiences that go beyond the ordinary.</h5>
+                <h3 class="mt-5">OUR TEAM</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Priya Sharma</h5>
+                                <p class="card-text">With a passion for discovering offbeat destinations, Priya has
+                                    spent over a decade crafting personalized travel experiences. Her motto: “Travel is
+                                    the only thing you buy that makes you richer.”</p>
+                                <div class="card-footer bg-primary text-white">
+                                    <small class="text-white">Co-Founder & Chief Travel Designer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Arjun Mehta</h5>
+                                <p class="card-text">Arjun ensures every trip runs like clockwork. From flights to
+                                    hotels to on-ground logistics, he's the man behind the magic. He believes in
+                                    flawless execution with a smile..</p>
+                                <div class="card-footer bg-primary text-white">
+                                    <small class="text-white">Head of Operations</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Sara Fernandes</h5>
+                                <p class="card-text">Sara brings destinations to life through storytelling, visuals, and
+                                    branding. She’s the eye behind our campaigns and the soul behind our
+                                    wanderlust-inspiring content.</p>
+                                <div class="card-footer bg-primary text-white">
+                                    <small class="text-white">Creative Director</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="search-result">
+
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="travel_recommendation.js"></script>
+
+</html>
