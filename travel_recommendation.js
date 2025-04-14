@@ -22,8 +22,8 @@ async function searchTravelData(searchType) {
 
             default:
                 return data.countries
-                    .filter(country => country.name.toLowerCase().includes(searchKeyword))
-                    .map(country => country.name);
+                    .filter(country => country.name.toLowerCase().includes(searchType))
+                    .map(srcCon => srcCon);
         }
     } catch (error) {
         console.error('Error fetching or processing data:', error);
@@ -48,7 +48,10 @@ function searchCondition() {
     searchTravelData(input).then(data => {
         
         if(data.length > 0){
-            const innderDiv = data.map(entry=>{
+            console.log(data);
+           let res = (data[0].cities)? data[0].cities : data;
+           console.log(res);
+            const innderDiv = res.map(entry=>{
                 return(`<div class="col">
                     <div class="card">
                         <img src="./images/${entry.imageUrl}" class="card-img-top" alt="...">
