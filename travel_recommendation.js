@@ -18,7 +18,7 @@ async function searchTravelData(searchType) {
 
             case 'countries':
             case 'country':
-                return data.countries.map(country => country.name);
+                return data.countries;
 
             default:
                 return data.countries
